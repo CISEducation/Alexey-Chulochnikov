@@ -1,0 +1,7 @@
+workspace '../github client.xcworkspace'
+xcodeproj '../github client.xcodeproj'
+
+platform :ios, '8.0'
+
+pod "AFNetworking", "~> 2.0"
+

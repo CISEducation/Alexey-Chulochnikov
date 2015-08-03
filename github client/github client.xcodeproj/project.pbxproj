@@ -98,14 +98,10 @@
 		CB4392D71B6E0BF0008AD346 /* github client */ = {
 			isa = PBXGroup;
 			children = (
-				CB4392DC1B6E0BF1008AD346 /* AppDelegate.h */,
-				CB4392DD1B6E0BF1008AD346 /* AppDelegate.m */,
-				CB4392E21B6E0BF1008AD346 /* ViewController.h */,
-				CB4392E31B6E0BF1008AD346 /* ViewController.m */,
-				CB4392E51B6E0BF1008AD346 /* Main.storyboard */,
-				CB4392E81B6E0BF1008AD346 /* Images.xcassets */,
-				CB4392EA1B6E0BF1008AD346 /* LaunchScreen.xib */,
 				CB4392DF1B6E0BF1008AD346 /* github_client.xcdatamodeld */,
+				CB9AF10B1B6F500500E9F2AA /* Resources */,
+				CB9AF1091B6F4FCA00E9F2AA /* Sources */,
+				CB9AF10A1B6F4FEF00E9F2AA /* Storyboards */,
 				CB4392D81B6E0BF0008AD346 /* Supporting Files */,
 			);
 			path = "github client";
@@ -135,6 +131,42 @@
 				CB4392F61B6E0BF1008AD346 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9AF1091B6F4FCA00E9F2AA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CB9AF10C1B6F506400E9F2AA /* Service */,
+				CB4392DC1B6E0BF1008AD346 /* AppDelegate.h */,
+				CB4392DD1B6E0BF1008AD346 /* AppDelegate.m */,
+				CB4392E21B6E0BF1008AD346 /* ViewController.h */,
+				CB4392E31B6E0BF1008AD346 /* ViewController.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		CB9AF10A1B6F4FEF00E9F2AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CB4392E51B6E0BF1008AD346 /* Main.storyboard */,
+				CB4392EA1B6E0BF1008AD346 /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CB9AF10B1B6F500500E9F2AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB4392E81B6E0BF1008AD346 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CB9AF10C1B6F506400E9F2AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		EE75E4F7D3E4D27915228502 /* Pods */ = {
@@ -414,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "github client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "github client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

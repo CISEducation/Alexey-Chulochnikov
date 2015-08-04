@@ -16,6 +16,7 @@
 		CB4392E91B6E0BF1008AD346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4392E81B6E0BF1008AD346 /* Images.xcassets */; };
 		CB4392EC1B6E0BF1008AD346 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4392EA1B6E0BF1008AD346 /* LaunchScreen.xib */; };
 		CB4392F81B6E0BF1008AD346 /* github_clientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4392F71B6E0BF1008AD346 /* github_clientTests.m */; };
+		CBA633981B714FA700E7F204 /* GHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA633971B714FA700E7F204 /* GHLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		CB4392F11B6E0BF1008AD346 /* github clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "github clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4392F61B6E0BF1008AD346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4392F71B6E0BF1008AD346 /* github_clientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = github_clientTests.m; sourceTree = "<group>"; };
+		CBA633961B714FA700E7F204 /* GHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHLoginViewController.h; path = Sources/Presentation/Controllers/Login/GHLoginViewController.h; sourceTree = "<group>"; };
+		CBA633971B714FA700E7F204 /* GHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHLoginViewController.m; path = Sources/Presentation/Controllers/Login/GHLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 		CB9AF1091B6F4FCA00E9F2AA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CB9DA9F11B714AB500C7F547 /* Presentation */,
 				CB9AF10C1B6F506400E9F2AA /* Service */,
 				CB4392DC1B6E0BF1008AD346 /* AppDelegate.h */,
 				CB4392DD1B6E0BF1008AD346 /* AppDelegate.m */,
@@ -167,6 +171,31 @@
 			children = (
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		CB9DA9F11B714AB500C7F547 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CB9DA9F21B714AC300C7F547 /* Controllers */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		CB9DA9F21B714AC300C7F547 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB9DA9F31B714AD900C7F547 /* Login */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CB9DA9F31B714AD900C7F547 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CBA633961B714FA700E7F204 /* GHLoginViewController.h */,
+				CBA633971B714FA700E7F204 /* GHLoginViewController.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		EE75E4F7D3E4D27915228502 /* Pods */ = {
@@ -316,6 +345,7 @@
 			files = (
 				CB4392E11B6E0BF1008AD346 /* github_client.xcdatamodeld in Sources */,
 				CB4392DE1B6E0BF1008AD346 /* AppDelegate.m in Sources */,
+				CBA633981B714FA700E7F204 /* GHLoginViewController.m in Sources */,
 				CB4392E41B6E0BF1008AD346 /* ViewController.m in Sources */,
 				CB4392DB1B6E0BF1008AD346 /* main.m in Sources */,
 			);

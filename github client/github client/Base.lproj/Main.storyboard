@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jVJ-WA-Tsq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,66 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1141" y="537"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="NdD-Wy-E4u">
+            <objects>
+                <viewController id="jVJ-WA-Tsq" customClass="GHLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="onr-Na-E89"/>
+                        <viewControllerLayoutGuide type="bottom" id="yXo-B1-cVh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yFV-mf-Mvv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-sI-R7b">
+                                <rect key="frame" x="200" y="184" width="200" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZNb-mD-G8L"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I56-ir-p3D">
+                                <rect key="frame" x="200" y="235" width="200" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-Xf-kri">
+                                <rect key="frame" x="281" y="300" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I56-ir-p3D" firstAttribute="centerX" secondItem="8bP-sI-R7b" secondAttribute="centerX" id="5y2-ql-72A"/>
+                            <constraint firstItem="I56-ir-p3D" firstAttribute="width" secondItem="8bP-sI-R7b" secondAttribute="width" id="Gn9-dK-meo"/>
+                            <constraint firstItem="Ijo-Xf-kri" firstAttribute="top" secondItem="I56-ir-p3D" secondAttribute="bottom" constant="35" id="aai-PM-DiK"/>
+                            <constraint firstItem="I56-ir-p3D" firstAttribute="height" secondItem="8bP-sI-R7b" secondAttribute="height" id="dDc-ph-X4z"/>
+                            <constraint firstAttribute="centerX" secondItem="8bP-sI-R7b" secondAttribute="centerX" constant="-0.5" id="tCO-Yx-2hE"/>
+                            <constraint firstItem="I56-ir-p3D" firstAttribute="top" secondItem="8bP-sI-R7b" secondAttribute="bottom" constant="21" id="uCU-El-Do4"/>
+                            <constraint firstItem="Ijo-Xf-kri" firstAttribute="centerX" secondItem="I56-ir-p3D" secondAttribute="centerX" constant="-0.5" id="vjG-4f-tep"/>
+                            <constraint firstItem="8bP-sI-R7b" firstAttribute="top" secondItem="onr-Na-E89" secondAttribute="bottom" constant="164" id="z8O-zf-wff"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjy-ne-gsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="537"/>
         </scene>
     </scenes>
 </document>

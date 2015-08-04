@@ -34,4 +34,15 @@
 }
 */
 
+- (IBAction)loginButtonPressed {
+    GHGithubAPIController *githubAPIController = [[GHGithubAPIController alloc] initWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
+    
+    [githubAPIController getUserRepositoriesWithCompletionBlock:^(id responce, NSError *error) {
+        if (error) {
+            NSLog(@"error occured: %@", error);
+        } else {
+            NSLog(@"responce: %@", responce);
+        }
+    }];
+}
 @end

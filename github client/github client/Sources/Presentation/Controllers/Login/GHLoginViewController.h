@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UAGithubEngine/UAGithubEngine.h>
+#import "GHGithubAPIController.h"
 
 @interface GHLoginViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)loginButtonPressed;
 
 @end

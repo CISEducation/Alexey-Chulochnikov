@@ -48,7 +48,7 @@
                                 <rect key="frame" x="200" y="235" width="200" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-Xf-kri">
                                 <rect key="frame" x="281" y="300" width="38" height="30"/>
@@ -56,6 +56,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed" destination="jVJ-WA-Tsq" eventType="touchUpInside" id="EfH-KM-AVd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -71,6 +74,10 @@
                             <constraint firstItem="8bP-sI-R7b" firstAttribute="top" secondItem="onr-Na-E89" secondAttribute="bottom" constant="164" id="z8O-zf-wff"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="I56-ir-p3D" id="ebA-Pa-bFt"/>
+                        <outlet property="usernameTextField" destination="8bP-sI-R7b" id="n3Q-Ss-oOz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjy-ne-gsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

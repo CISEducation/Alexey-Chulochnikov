@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jVJ-WA-Tsq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jVJ-WA-Tsq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="width" constant="200" id="ZNb-mD-G8L"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I56-ir-p3D">
                                 <rect key="frame" x="200" y="235" width="200" height="30"/>
@@ -75,6 +75,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="Ijo-Xf-kri" id="k9X-KE-KCe"/>
                         <outlet property="passwordTextField" destination="I56-ir-p3D" id="ebA-Pa-bFt"/>
                         <outlet property="usernameTextField" destination="8bP-sI-R7b" id="n3Q-Ss-oOz"/>
                     </connections>

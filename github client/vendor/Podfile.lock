@@ -20,14 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - OCMock (3.1.2)
   - UAGithubEngine (2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - OCMock
   - UAGithubEngine
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
   UAGithubEngine: 774172b0cc0c9fe35c7bcfb7eb3d64787b846d9d
 
 COCOAPODS: 0.38.2

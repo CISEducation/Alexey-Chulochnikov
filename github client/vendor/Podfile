@@ -3,5 +3,11 @@ xcodeproj '../github client.xcodeproj'
 
 platform :ios, '8.0'
 
-pod "AFNetworking", "~> 2.0"
-pod "UAGithubEngine"
+target 'github client' do
+	pod "AFNetworking", "~> 2.0"
+	pod "UAGithubEngine"
+end
+
+target 'github clientTests' do
+	pod 'OCMock'
+end

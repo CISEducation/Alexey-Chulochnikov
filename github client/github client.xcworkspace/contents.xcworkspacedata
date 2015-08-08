@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:github client/Sources/Presentation/Controllers/Login/GHLoginViewControllerTests.m">
+   </FileRef>
+   <FileRef
       location = "group:github client.xcodeproj">
    </FileRef>
    <FileRef

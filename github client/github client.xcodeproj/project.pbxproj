@@ -20,6 +20,7 @@
 		CB4392F81B6E0BF1008AD346 /* github_clientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4392F71B6E0BF1008AD346 /* github_clientTests.m */; };
 		CB7936A21B715D40001B6A5A /* GHGithubAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7936A11B715D40001B6A5A /* GHGithubAPIController.m */; };
 		CBA633981B714FA700E7F204 /* GHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA633971B714FA700E7F204 /* GHLoginViewController.m */; };
+		CBB18F7E1B761077000626FC /* GHLoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB18F7D1B761077000626FC /* GHLoginViewControllerTests.m */; };
 		E13E01D94DF04D85D1D27FA1 /* libPods-github client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D737ABF0BBEFC6D2D9058CF /* libPods-github client.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		CB7936A11B715D40001B6A5A /* GHGithubAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHGithubAPIController.m; path = Sources/Service/Network/GHGithubAPIController.m; sourceTree = "<group>"; };
 		CBA633961B714FA700E7F204 /* GHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHLoginViewController.h; path = Sources/Presentation/Controllers/Login/GHLoginViewController.h; sourceTree = "<group>"; };
 		CBA633971B714FA700E7F204 /* GHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHLoginViewController.m; path = Sources/Presentation/Controllers/Login/GHLoginViewController.m; sourceTree = "<group>"; };
+		CBB18F7D1B761077000626FC /* GHLoginViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHLoginViewControllerTests.m; path = Sources/Presentation/Controllers/Login/GHLoginViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				CBA633961B714FA700E7F204 /* GHLoginViewController.h */,
 				CBA633971B714FA700E7F204 /* GHLoginViewController.m */,
+				CBB18F7D1B761077000626FC /* GHLoginViewControllerTests.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB18F7E1B761077000626FC /* GHLoginViewControllerTests.m in Sources */,
 				CB19EA621B73478F00B26A14 /* GHGithubAPIControllerTests.m in Sources */,
 				CB4392F81B6E0BF1008AD346 /* github_clientTests.m in Sources */,
 			);
